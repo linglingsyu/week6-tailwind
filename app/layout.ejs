@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css' integrity='sha512-9nqhm3FWfB00id4NJpxK/wV1g9P2QfSsEPhSSpT+6qrESP6mpYbTfpC+Jvwe2XY27K5mLwwrqYuzqMGK5yC9/Q==' crossorigin='anonymous'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="text-white leading-normal">
+  <header class="flex bg-black-800 relative">
+    <div class="container flex justify-between items-center py-6">
+        <a href="/week6">
+          <picture>
+            <source srcset="./assets/images/logo2.svg"
+                    media="(max-width: 768px)">
+            <img class="w-6 h-auto md:h-[42px] md:w-[175px] " src="./assets/images/logo.svg" alt="logo" />
+          </picture>
+        </a>
+        <span id="menu-toggle" class="material-symbols-outlined text-green leading-6 cursor-pointer lg:hidden">
+        drag_handle
+        </span>
+        <ul class="-mx-6 hidden lg:flex items-center ease-linear duration-300">
+          <li class="px-6 hover:text-green"><a href="#">首頁</a></li>
+          <li class="px-6 hover:text-green"><a href="#">課程介紹</a></li>
+          <li class="px-6 hover:text-green"><a href="#"><i class="fa-solid fa-circle-user mr-1"></i>登入</a></li>
+        </ul>
+    </div>
+    <div class="h-[2px] w-1/2 bg-green absolute left-0 bottom-0"></div>
+    <div class="h-[2px] w-1/2 bg-blue absolute right-0 bottom-0"></div>
+  </header>
+  <ul id="mobile-menu" class="w-full bg-black-800 text-center py-6 absolute hidden" >
+    <li class="mb-6"><a class="text-lg" href="#">首頁</a></li>
+    <li class="mb-6"><a class="text-lg" href="#">課程介紹</a></li>
+    <li><a class="text-lg flex items-center justify-center" href="#"><i class="fa-solid fa-circle-user mr-1"></i>登入</a></li>
+  </ul>
+
+  <%- contents %>
+
+  <footer class="py-6 text-center bg-[#1A1A1A]">
+    <p>Coding Home © 2022 All Rights Reserved</p>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
