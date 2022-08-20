@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css' integrity='sha512-9nqhm3FWfB00id4NJpxK/wV1g9P2QfSsEPhSSpT+6qrESP6mpYbTfpC+Jvwe2XY27K5mLwwrqYuzqMGK5yC9/Q==' crossorigin='anonymous'/>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="text-white leading-normal">
+  <header class="flex bg-black-800 relative">
+    <div class="container flex justify-between items-center py-6">
+        <a href="/week6">
+          <picture>
+            <source srcset="./assets/images/logo2.svg"
+                    media="(max-width: 768px)">
+            <img class="w-6 h-auto md:h-[42px] md:w-[175px] " src="./assets/images/logo.svg" alt="logo" />
+          </picture>
+        </a>
+        <span id="menu-toggle" class="material-symbols-outlined text-green leading-6 cursor-pointer lg:hidden">
+        drag_handle
+        </span>
+        <ul class="-mx-6 hidden lg:flex items-center ease-linear duration-300">
+          <li class="px-6 hover:text-green"><a href="#">首頁</a></li>
+          <li class="px-6 hover:text-green"><a href="#">課程介紹</a></li>
+          <li class="px-6 hover:text-green"><a href="#"><i class="fa-solid fa-circle-user mr-1"></i>登入</a></li>
+        </ul>
+    </div>
+    <div class="h-[2px] w-1/2 bg-green absolute left-0 bottom-0"></div>
+    <div class="h-[2px] w-1/2 bg-blue absolute right-0 bottom-0"></div>
+  </header>
+  <ul id="mobile-menu" class="z-10 w-full bg-black-800 text-center py-6 absolute hidden" >
+    <li class="mb-6"><a class="text-lg" href="#">首頁</a></li>
+    <li class="mb-6"><a class="text-lg" href="#">課程介紹</a></li>
+    <li><a class="text-lg flex items-center justify-center" href="#"><i class="fa-solid fa-circle-user mr-1"></i>登入</a></li>
+  </ul>
+
+  <section class="bg-black-900">
+  <div
+    class="container text-sm h-[336px] bg-[url('../images/bg_home_mobile.jpg')] bg-center bg-cover bg-no-repeat flex justify-center items-center lg:bg-[url('../images/bg_home.jpg')] lg:h-[680px] "
+  >
+    <div class="relative w-full border border-white py-8 text-center  lg:w-1/2 lg:py-12 ]">
+      <h1 class="text-2xl md:text-5xl font-bold mb-6"><span
+          class="mygradient  bg-clip-text text-transparent">全台最豐富的程式家教</span><br><span>在實踐中化理想為現實</span></h1>
+      <p>全台最專業師資｜到府程式家教｜客製化課程</p>
+      <div class="w-[10px] h-[10px] bg-white absolute top-0 left-0 -translate-y-1/2 -translate-x-1/2"></div>
+      <div class="w-[10px] h-[10px] bg-white absolute top-0 right-0 -translate-y-1/2 translate-x-1/2"></div>
+      <div class="w-[10px] h-[10px] bg-white absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2"></div>
+      <div class="w-[10px] h-[10px] bg-white absolute bottom-0 right-0 translate-y-1/2 translate-x-1/2"></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-black-800 py-10 md:py-20 text-center">
+  <div class="container">
+    <ul class="flex flex-wrap gap-y-6 items-center md:-mx-3">
+      <li class="basis-full md:basis-1/2 lg:basis-1/4 md:px-3 text-center mb-6">
+          <h2 class="text-2xl relative w-fit mx-auto">手把手帶你<br>親自到家教到會
+            <div class="w-[50px] h-[3px] bg-green absolute -bottom-4 left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 "></div>
+          </h2>
+      </li>
+      <li class="text-lg  group basis-full md:basis-1/2 lg:basis-1/4 md:px-3 ">
+        <div class="ease-linear duration-300 bg-[#202020] border border-black-800 py-12 rounded-xl lg:opacity-50 lg:bg-transparent lg:group-hover:bg-[#202020] lg:group-hover:border lg:group-hover:border-green lg:group-hover:opacity-100">
+          <span class="material-symbols-outlined text-[50px] mb-6 mygradient bg-clip-text text-transparent lg:bg-none lg:bg-clip-content lg:text-white group-hover:mygradient group-hover:bg-clip-text group-hover:text-transparent">
+            code
+          </span>
+          <h3 class="font-bold mb-4">超過 100 種專業課程</h3>
+          <p>學習標準化的電腦形式語言<br>培養運算思維和邏輯素養</p>
+        </div>
+      </li>
+      <li class="text-lg  group basis-full md:basis-1/2 lg:basis-1/4 md:px-3 ">
+        <div class="ease-linear duration-300 bg-[#202020] border border-black-800 py-12 rounded-xl lg:opacity-50 lg:bg-transparent lg:group-hover:bg-[#202020] lg:group-hover:border lg:group-hover:border-green lg:group-hover:opacity-100">
+          <span class="material-symbols-outlined text-[50px] mb-6 mygradient bg-clip-text text-transparent lg:bg-none lg:bg-clip-content lg:text-white group-hover:mygradient group-hover:bg-clip-text group-hover:text-transparent">
+            rocket_launch
+          </span>
+          <h3 class="font-bold mb-4">高效學習</h3>
+          <p>客製化專屬課表<br>讓學習變簡單</p>
+        </div>
+      </li>
+      <li class="text-lg group basis-full md:basis-1/2 lg:basis-1/4 md:px-3 ">
+        <div class="ease-linear duration-300 bg-[#202020] border border-black-800 py-12 rounded-xl lg:opacity-50 lg:bg-transparent lg:group-hover:bg-[#202020] lg:group-hover:border lg:group-hover:border-green lg:group-hover:opacity-100">
+          <span class="material-symbols-outlined text-[50px] mb-6 mygradient bg-clip-text text-transparent lg:bg-none lg:bg-clip-content lg:text-white group-hover:mygradient group-hover:bg-clip-text group-hover:text-transparent">
+            location_on
+          </span>
+          <h3 class="font-bold mb-4">指定地點</h3>
+          <p>專業老師到你指定的地點<br>一對一高效學習</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="bg-black-900 py-10 md:py-20 ">
+  <div class="container">
+    <ul class="flex flex-wrap gap-y-6 items-center md:-mx-3">
+      <li class="basis-full lg:px-3 text-center mb-6">
+          <h2 class="text-2xl relative w-fit mx-auto">預期上課流程
+            <div class="w-[50px] h-[3px] bg-green absolute -bottom-4 left-1/2 -translate-x-1/2"></div>
+          </h2>
+      </li>
+      <li class="basis-full md:basis-1/2 lg:basis-1/4 mb-6 md:px-3">
+        <div class="relative p-12 rounded-xl border">
+          <h3 class="text-2xl font-bold mb-4">預約</h3>
+          <p class="text-lg">線上預約指定課程與老師<br>由老師安排專屬課程</p>
+          <div class="text-green absolute text-5xl font-bold top-0 left-10 bg-black-900 px-2 -translate-y-1/2">01</div>
+        </div>
+      </li>
+      <li class="basis-full md:basis-1/2 lg:basis-1/4 mb-6 md:px-3">
+        <div class="relative p-12 rounded-xl border">
+          <h3 class="text-2xl font-bold mb-4">付款</h3>
+          <p class="text-lg">支援各種支付方式<br>提供12期分期付款</p>
+          <div class="text-green absolute text-5xl font-bold top-0 left-10 bg-black-900 px-2 -translate-y-1/2">02</div>
+        </div>
+      </li>
+      <li class="basis-full md:basis-1/2 lg:basis-1/4 mb-6 md:px-3">
+        <div class="relative p-12 rounded-xl border">
+          <h3 class="text-2xl font-bold mb-4">上課</h3>
+          <p class="text-lg">地點由您指定<br>密集性一對一教學</p>
+          <div class="text-green absolute text-5xl font-bold top-0 left-10 bg-black-900 px-2 -translate-y-1/2">03</div>
+        </div>
+      </li>
+      <li class="basis-full md:basis-1/2 lg:basis-1/4 mb-6 md:px-3">
+        <div class="relative p-12 rounded-xl border">
+          <h3 class="text-2xl font-bold mb-4">提供滿意度</h3>
+          <p class="text-lg">提供課程滿意度及回饋<br>讓我們持續成長與進步</p>
+          <div class="text-green absolute text-5xl font-bold top-0 left-10 bg-black-900 px-2 -translate-y-1/2">04</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="bg-black-800 pt-10 md:py-20 ">
+  <div class="container ">
+    <ul class="flex flex-wrap gap-y-6 items-center md:-mx-3">
+      <li class="basis-full lg:px-3 text-center mb-6">
+          <h2 class="text-2xl relative w-fit mx-auto">你想要學習的程式，<span class="block md:inline">都在這裡</span>
+            <div class="w-[50px] h-[3px] bg-green absolute -bottom-4 left-1/2 -translate-x-1/2"></div>
+          </h2>
+      </li>
+      <li class="basis-full mb-6 md:px-3 overflow-auto ">
+        <ul class="flex gap-2 py-10 scrollbar-thin scrollbar-track-black-900">
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">JavaScript</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">HTML/CSS</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">SQL</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">Java</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">SQL</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">Bash/Shell</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">Python</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">Python</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">PHP</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">C++</li>
+          <li class="border border-white rounded-lg p-4 md:py-6 md:px-8">JavaScript</li>
+        </ul>
+      </li>
+    
+    </ul>
+  </div>
+</section>
+
+  <footer class="py-6 text-center bg-[#1A1A1A]">
+    <p>Coding Home © 2022 All Rights Reserved</p>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
