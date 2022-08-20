@@ -18,10 +18,15 @@ module.exports = {
         blue: "#09ACF5",
       },
       fontSize: {
+        'sm':'0.875rem',
         'lg': '1.125rem',
         '2xl': '1.5rem',
-      }
+        '5xl':'3rem',
+      },
+      // fontFamily: {
+      //   'display': ['Azeret Mono','Noto Sans TC', ...defaultTheme.fontFamily.mono],
+      // },
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography"), require ( 'tailwind-scrollbar' ) , ],
 };
