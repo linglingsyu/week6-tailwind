@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>課程列表</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css' integrity='sha512-9nqhm3FWfB00id4NJpxK/wV1g9P2QfSsEPhSSpT+6qrESP6mpYbTfpC+Jvwe2XY27K5mLwwrqYuzqMGK5yC9/Q==' crossorigin='anonymous'/>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="text-white leading-normal">
+  <header class="flex bg-black-800 relative">
+    <div class="container flex justify-between items-center py-6">
+        <a href="/week6">
+          <picture>
+            <source srcset="./assets/images/logo2.svg"
+                    media="(max-width: 768px)">
+            <img class="w-6 h-auto md:h-[42px] md:w-[175px] " src="./assets/images/logo.svg" alt="logo" />
+          </picture>
+        </a>
+        <span id="menu-toggle" class="material-symbols-outlined text-green leading-6 cursor-pointer lg:hidden">
+        drag_handle
+        </span>
+        <ul class="-mx-6 hidden lg:flex items-center ease-linear duration-300">
+          <li class="px-6 hover:text-green"><a href="#">首頁</a></li>
+          <li class="px-6 hover:text-green"><a href="#">課程介紹</a></li>
+          <li class="px-6 hover:text-green"><a href="#"><i class="fa-solid fa-circle-user mr-1"></i>登入</a></li>
+        </ul>
+    </div>
+    <div class="h-[2px] w-1/2 bg-green absolute left-0 bottom-0"></div>
+    <div class="h-[2px] w-1/2 bg-blue absolute right-0 bottom-0"></div>
+  </header>
+  <ul id="mobile-menu" class="z-10 w-full bg-black-800 text-center py-6 absolute hidden" >
+    <li class="mb-6"><a class="text-lg" href="/week6-tailwind/">首頁</a></li>
+    <li class="mb-6"><a class="text-lg" href="/week6-tailwind/class.html">課程介紹</a></li>
+    <li><a class="text-lg flex items-center justify-center" href="#"><i class="fa-solid fa-circle-user mr-1"></i>登入</a></li>
+  </ul>
+
+  
+<section class="bg-black lg:px-[110px] py-10 ">
+  <div class="container">
+    <ul class="flex gap-4 overflow-auto mb-12">
+      <li class="py-4 px-8 shrink-0 border rounded-lg border-green hover:text-green hover:border-green"><a
+          href="#">所有課程</a></li>
+      <li class="py-4 px-8 shrink-0 border border-white rounded-lg hover:text-green hover:border-green"><a
+          href="#">行動應用開發</a></li>
+      <li class="py-4 px-8 shrink-0 border border-white rounded-lg hover:text-green hover:border-green"><a
+          href="#">資料庫/資料科學</a></li>
+      <li class="py-4 px-8 shrink-0 border border-white rounded-lg hover:text-green hover:border-green"><a
+          href="#">前端語言</a></li>
+      <li class="py-4 px-8 shrink-0 border border-white rounded-lg hover:text-green hover:border-green"><a
+          href="#">後端語言</a></li>
+      <li class="py-4 px-8 shrink-0 border border-white rounded-lg hover:text-green hover:border-green"><a
+          href="#">作業系統與伺服器</a></li>
+    </ul>
+  </div>
+
+  <div class="container lg:p-0">
+
+    <ul class="flex flex-col gap-y-6 lg:gap-y-8">
+      <li class="basis-full md:basis-1/2 md:px-3 lg:basis-1/4  lg:gap-x-12 ">
+        <div
+          class="flex flex-col justify-center  h-full bg-black-800 rounded-3xl gap-6 px-6 py-8 lg:flex-row lg:gap-x-12"
+        >
+          <div class="flex flex-col lg:flex-row ">
+            <div class="shrink-0 text-center">
+              <img
+                class="w-[100px] h-[100px] rounded-full mx-auto mb-2  lg:mx-0"
+                src="./assets/images/teacher01.jpg"
+                alt="teacher01.jpg"
+              >
+              <p class="mb-6">Belinda</p>
+            </div>
+            <div class=" flex  flex-col  text-left lg:mx-12 ">
+              <h3 class="text-[20px] font-bold mb-2 ">基礎前端 - HTML</h3>
+              <p class="mb-2 text-green">前端語言</p>
+              <p>帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+            </div>
+          </div>
+          <div class="pt-4 -mx-8 px-8 text-center lg:py-0">
+            <div class="mb-4">
+              50分鐘<span class="ml-2 text-[32px]">NT$1600</span>
+            </div>
+            <div class="flex lg:flex-col justify-between gap-2">
+              <div class="basis-1/2 ">
+                <a
+                  class=" py-2 block border rounded-lg border-white"
+                  href="#"
+                >課程介紹</a>
+              </div>
+              <div class="basis-1/2 ">
+                <a
+                  class=" py-2 block border rounded-lg border-transparent btnGradient"
+                  href="#"
+                >立即預約</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="basis-full md:basis-1/2 md:px-3 lg:basis-1/4  lg:gap-x-12 ">
+        <div
+          class="flex flex-col justify-center  h-full bg-black-800 rounded-3xl gap-6 px-6 py-8 lg:flex-row lg:gap-x-12"
+        >
+          <div class="flex flex-col lg:flex-row ">
+            <div class="shrink-0 text-center">
+              <img
+                class="w-[100px] h-[100px] rounded-full mx-auto mb-2  lg:mx-0"
+                src="./assets/images/teacher02.jpg"
+                alt="teacher02.jpg"
+              >
+              <p class="mb-6">Guava</p>
+            </div>
+            <div class=" flex  flex-col  text-left lg:mx-12 ">
+              <h3 class="text-[20px] font-bold mb-2 ">2022 Python 全攻略｜從入門到實務</h3>
+              <p class="mb-2 text-green">後端語言</p>
+              <p>Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本堂課帶你無痛入門，開發簡單的應用！</p>
+            </div>
+          </div>
+          <div class="pt-4 -mx-8 px-8 text-center lg:py-0">
+            <div class="mb-4">
+              50分鐘<span class="ml-2 text-[32px]">NT$2000</span>
+            </div>
+            <div class="flex lg:flex-col justify-between gap-2">
+              <div class="basis-1/2 ">
+                <a
+                  class=" py-2 block border rounded-lg border-white"
+                  href="#"
+                >課程介紹</a>
+              </div>
+              <div class="basis-1/2 ">
+                <a
+                  class=" py-2 block border rounded-lg border-transparent btnGradient"
+                  href="#"
+                >立即預約</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="basis-full md:basis-1/2 md:px-3 lg:basis-1/4  lg:gap-x-12 ">
+        <div
+          class="flex flex-col justify-center  h-full bg-black-800 rounded-3xl gap-6 px-6 py-8 lg:flex-row lg:gap-x-12"
+        >
+          <div class="flex flex-col lg:flex-row ">
+            <div class="shrink-0 text-center">
+              <img
+                class="w-[100px] h-[100px] rounded-full mx-auto mb-2  lg:mx-0"
+                src="./assets/images/teacher03.jpg"
+                alt="teacher03.jpg"
+              >
+              <p class="mb-6">Joe</p>
+            </div>
+            <div class=" flex  flex-col  text-left lg:mx-12 ">
+              <h3 class="text-[20px] font-bold mb-2 ">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h3>
+              <p class="mb-2 text-green">行動應用開發</p>
+              <p>Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最合適的應答句，本堂課會帶你了解 Line Bot
+                如何結合其他工具的應用。</p>
+            </div>
+          </div>
+          <div class="pt-4 -mx-8 px-8 text-center lg:py-0">
+            <div class="mb-4">
+              50分鐘<span class="ml-2 text-[32px]">NT$1800</span>
+            </div>
+            <div class="flex lg:flex-col justify-between gap-2">
+              <div class="basis-1/2 ">
+                <a
+                  class=" py-2 block border rounded-lg border-white"
+                  href="#"
+                >課程介紹</a>
+              </div>
+              <div class="basis-1/2 ">
+                <a
+                  class=" py-2 block border rounded-lg border-transparent btnGradient"
+                  href="#"
+                >立即預約</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="basis-full md:basis-1/2 md:px-3 lg:basis-1/4  lg:gap-x-12 ">
+        <div
+          class="flex flex-col justify-center  h-full bg-black-800 rounded-3xl gap-6 px-6 py-8 lg:flex-row lg:gap-x-12"
+        >
+          <div class="flex flex-col lg:flex-row ">
+            <div class="shrink-0 text-center">
+              <img
+                class="w-[100px] h-[100px] rounded-full mx-auto mb-2  lg:mx-0"
+                src="./assets/images/teacher04.jpg"
+                alt="teacher04.jpg"
+              >
+              <p class="mb-6">Lina</p>
+            </div>
+            <div class=" flex  flex-col  text-left lg:mx-12 ">
+              <h3 class="text-[20px] font-bold mb-2 ">Linux 零基礎七天入門｜入門到實務</h3>
+              <p class="mb-2 text-green">前端語言</p>
+              <p>Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式語言的基本語法</p>
+            </div>
+          </div>
+          <div class="pt-4 -mx-8 px-8 text-center lg:py-0">
+            <div class="mb-4">
+              50分鐘<span class="ml-2 text-[32px]">NT$1800</span>
+            </div>
+            <div class="flex lg:flex-col justify-between gap-2">
+              <div class="basis-1/2 ">
+                <a
+                  class=" py-2 block border rounded-lg border-white"
+                  href="#"
+                >課程介紹</a>
+              </div>
+              <div class="basis-1/2 ">
+                <a
+                  class=" py-2 block border rounded-lg border-transparent btnGradient"
+                  href="#"
+                >立即預約</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <footer class="py-6 text-center bg-[#1A1A1A]">
+    <p>Coding Home © 2022 All Rights Reserved</p>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <!-- <script src="./assets/js/swiper.js"></script> -->
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
