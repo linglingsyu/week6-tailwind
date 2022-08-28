@@ -11,8 +11,13 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Noto+Sans+TC&display=swap" rel="stylesheet">
-
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="./assets/style/swiper.css">
+
 </head>
 
 <body class="text-white leading-normal">
@@ -260,7 +265,9 @@
         </div>
       </li>
     </ul>
-    <div class="text-center mt-6 "><a href="/week6-tailwind/class.html" class="py-2 px-8 bg-gradient-to-r from-blue to-green rounded-lg text-center"
+    <div class="text-center mt-6 "><a
+        href="/week6-tailwind/class.html"
+        class="py-2 px-8 bg-gradient-to-r from-blue to-green rounded-lg text-center"
       >所有課程列表</a></div>
   </div>
 </section>
@@ -363,10 +370,10 @@
             ></a>
           <h3 class="text-lg font-bold mb-4">2022 前端開發者學習地圖</h3>
           <p class="mb-4">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
-          <div class="text-right"><a
-              class="text-green"
-              href="#"
-            >MORE</a></div>
+          <a
+            class="block text-right text-green"
+            href="#"
+          >MORE</a>
         </div>
         <div
           class="ease-linear duration-300 invisible opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 absolute top-0 left-0 w-8 h-8 border border-b-transparent border-l-green border-r-transparent border-t-green rounded-tl-[16px]"
@@ -390,10 +397,10 @@
             ></a>
           <h3 class="text-lg font-bold mb-4">軟體工程師有哪些類別</h3>
           <p class="mb-4">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
-          <div class="text-right"><a
-              class="text-green"
-              href="#"
-            >MORE</a></div>
+          <a
+            class="block text-right text-green"
+            href="#"
+          >MORE</a>
         </div>
         <div
           class="ease-linear duration-300 invisible opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 absolute top-0 left-0 w-8 h-8 border border-b-transparent border-l-green border-r-transparent border-t-green rounded-tl-[16px]"
@@ -417,10 +424,10 @@
             ></a>
           <h3 class="text-lg font-bold mb-4">免費 25 小時前端教學資源</h3>
           <p class="mb-4">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
-          <div class="text-right"><a
-              class="text-green"
-              href="#"
-            >MORE</a></div>
+          <a
+            class="block text-right text-green"
+            href="#"
+          >MORE</a>
         </div>
         <div
           class="ease-linear duration-300 invisible opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 absolute top-0 left-0 w-8 h-8 border border-b-transparent border-l-green border-r-transparent border-t-green rounded-tl-[16px]"
@@ -439,19 +446,53 @@
   </div>
 </section>
 
-<section class="bg-black-900 py-10 md:py-20 ">
-  <div class="container">
+<section class="bg-black py-10 md:py-20 ">
+  <div class="container bg-[url('../images/bg_share.jpg')] bg-no-repeat bg-center bg-cover lg:min-h-[733px]">
     <h2 class="text-2xl relative text-center"><span class="block">專屬你的學習課程</span><span class="">超過 3000
         位學員得到了</span><span class="block lg:inline">程式超能力</span>
       <div class="w-[50px] h-[3px] bg-green absolute -bottom-4 left-1/2 -translate-x-1/2"></div>
     </h2>
+
+            <!-- Slider main container -->
+            <div class="swiper w-[600px] h-[300px]">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper ">
+                <!-- Slides -->
+               <img class="swiper-slide rounded-3xl object-cover  " src="./assets/images/share.jpg" alt="share.jpg">
+               <img class="swiper-slide rounded-3xl object-cover  " src="./assets/images/share.jpg" alt="share.jpg">
+               <img class="swiper-slide rounded-3xl object-cover  " src="./assets/images/share.jpg" alt="share.jpg">
+               <img class="swiper-slide rounded-3xl object-cover  " src="./assets/images/share.jpg" alt="share.jpg">
+               
+                <!-- <div class="swiper-slide"><img class="rounded-3xl object-cover  " src="./assets/images/share.jpg" alt="share.jpg"></div>
+                <div class="swiper-slide"><img class="rounded-3xl object-cover  " src="./assets/images/share.jpg" alt="share.jpg"></div>
+                <div class="swiper-slide"><img class="rounded-3xl object-cover  " src="./assets/images/share.jpg" alt="share.jpg"></div> -->
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <span class="material-symbols-outlined">
+                  arrow_back
+                  </span>
+              </div>
+              <div class="swiper-button-next">
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                  </span>
+              </div>
+            </div>
+                
+
+
   </div>
 </section>
 
 
 <section class="bg-black  py-10">
   <div class="container">
-    <div class="rounded-3xl bg-black-800 text-center px-6 py-10 flex flex-col items-center gap-y-6 lg:flex-row lg:justify-between lg:p-12 lg:max-w-[966px] mx-auto">
+    <div
+      class="rounded-3xl bg-black-800 text-center px-6 py-10 flex flex-col items-center gap-y-6 lg:flex-row lg:justify-between lg:p-12 lg:max-w-[966px] mx-auto"
+    >
       <div class="flex flex-col lg:flex-row items-center justify-between">
         <span class="material-symbols-outlined text-[100px]">
           menu_book
@@ -477,6 +518,8 @@
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <!-- <script src="./assets/js/swiper.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
 
