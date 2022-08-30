@@ -19,9 +19,11 @@ module.exports = {
       },
       fontSize: {
         'sm':'0.875rem',
+        'base':'1rem',
         'lg': '1.125rem',
         '2xl': '1.5rem',
         '5xl':'3rem',
+        
       },
       // fontFamily: {
       //   'display': ['Azeret Mono','Noto Sans TC', ...defaultTheme.fontFamily.mono],

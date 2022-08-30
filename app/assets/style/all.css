@@ -17,9 +17,13 @@
     background-image: linear-gradient(107deg, #09ACF5,#62DB54);
   }
 
-  .swiper {
-    width: 600px;
-    height: 300px;
+  .position-initial{
+    position: initial;
   }
+
+  .transform-none{
+    transform:none;
+  }
+
 }
 

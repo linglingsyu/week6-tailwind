@@ -1,0 +1,26 @@
+.swiper-pagination-bullet{
+  background: #62DB54 !important;
+   /* 沒有active的樣式是有透明度的這裡加上讓他不透明 */ 
+   opacity: 1 !important;
+   transition:0.5s ;  
+ }
+
+  /* 在active的樣式重寫border-radius與padding調整到pill形狀*/
+  .swiper-pagination-bullet-active{
+    padding:0 8px;
+    border-radius: 6px;
+    transition:0.5s ;
+   }
+
+   .swiper-pagination{
+    width: auto !important;
+    position: unset !important;
+    transform: none !important;
+   }
+
+   .swiper-button-prev,.swiper-button-next{
+    margin-top: 0;
+    position: unset !important;
+    transform: none !important;
+    height: auto !important;
+   }
