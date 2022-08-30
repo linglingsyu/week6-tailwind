@@ -4,23 +4,22 @@ $(document).ready(function () {
   $("#menu-toggle").on("click", function () {
     $("#mobile-menu").slideToggle();
   });
-});
-"use strict";
-
-// // import Swiper bundle with all modules installed
+}); // // import Swiper bundle with all modules installed
 //  import Swiper from 'swiper/bundle';
 //  // import styles bundle
 //  import '../style/swiper.css';
+
 var swiper = new Swiper(".swiper", {
   // Optional parameters
   // direction: 'vertical',
-  loop: false,
   autoplay: {
     delay: 3000
   },
+  effect: "fade",
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination"
+    el: ".swiper-pagination",
+    clickable: true
   },
   // Navigation arrows
   navigation: {
