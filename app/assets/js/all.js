@@ -33,7 +33,8 @@ const swiper = new Swiper(".mySwiper2", {
 
 const Myswiper = new Swiper(".mySwiper", {
   // Optional parameters
-  direction: "vertical",
+  // direction: "vertical",
+  loop: true,
   autoplay: {
     delay: 3000,
   },
