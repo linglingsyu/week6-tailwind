@@ -10,7 +10,7 @@ $(document).ready(() => {
 //  // import styles bundle
 //  import '../style/swiper.css';
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".mySwiper2", {
   // Optional parameters
   // direction: 'vertical',
   autoplay: {
@@ -29,9 +29,12 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+const Myswiper = new Swiper(".mySwiper", {
+  // Optional parameters
+  direction: "vertical",
+  autoplay: {
+    delay: 3000,
   },
 });
