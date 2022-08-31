@@ -9,7 +9,7 @@ $(document).ready(function () {
 //  // import styles bundle
 //  import '../style/swiper.css';
 
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".mySwiper2", {
   // Optional parameters
   // direction: 'vertical',
   autoplay: {
@@ -25,10 +25,13 @@ var swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
-  },
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar"
+  }
+});
+var Myswiper = new Swiper(".mySwiper", {
+  // Optional parameters
+  direction: "vertical",
+  autoplay: {
+    delay: 3000
   }
 });
 //# sourceMappingURL=all.js.map
