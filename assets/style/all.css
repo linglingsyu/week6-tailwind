@@ -738,6 +738,9 @@ select {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -807,6 +810,10 @@ select {
 }
 .w-1\/2 {
   width: 50%;
+}
+.flex-shrink-0 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .shrink-0 {
   -ms-flex-negative: 0;
