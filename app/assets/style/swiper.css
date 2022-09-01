@@ -24,3 +24,7 @@
     transform: none !important;
     height: auto !important;
    }
+
+   .mySwiper .swiper-slide{
+    width: fit-content !important;
+   }
