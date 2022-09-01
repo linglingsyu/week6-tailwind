@@ -30,7 +30,8 @@ var swiper = new Swiper(".mySwiper2", {
 var Myswiper = new Swiper(".mySwiper", {
   // Optional parameters
   // direction: "vertical",
-  loop: true,
+  // loop: true,
+  // freeMode: true,
   autoplay: {
     delay: 3000
   }

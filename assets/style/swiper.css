@@ -32,3 +32,9 @@
             transform: none !important;
     height: auto !important;
    }
+
+   .mySwiper .swiper-slide{
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+   }

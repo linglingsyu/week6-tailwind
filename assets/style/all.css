@@ -720,6 +720,9 @@ select {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -728,9 +731,6 @@ select {
 }
 .mr-4 {
   margin-right: 1rem;
-}
-.ml-4 {
-  margin-left: 1rem;
 }
 .mr-1 {
   margin-right: 0.25rem;
@@ -895,11 +895,6 @@ select {
   -webkit-column-gap: 1.5rem;
      -moz-column-gap: 1.5rem;
           column-gap: 1.5rem;
-}
-.gap-x-4 {
-  -webkit-column-gap: 1rem;
-     -moz-column-gap: 1rem;
-          column-gap: 1rem;
 }
 .overflow-auto {
   overflow: auto;
@@ -1337,10 +1332,6 @@ select {
         flex-basis: 50%;
   }
 
-  .md\:gap-4 {
-    gap: 1rem;
-  }
-
   .md\:bg-green {
     --tw-bg-opacity: 1;
     background-color: rgb(98 219 84 / var(--tw-bg-opacity));
@@ -1627,42 +1618,6 @@ select {
 
   .lg\:opacity-50 {
     opacity: 0.5;
-  }
-
-  .lg\:scrollbar-thin {
-    --scrollbar-track: initial;
-    --scrollbar-thumb: initial;
-    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-    overflow: overlay;
-  }
-
-  .lg\:scrollbar-thin.overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .lg\:scrollbar-thin.overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .lg\:scrollbar-thin::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-track);
-  }
-
-  .lg\:scrollbar-thin::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb);
-  }
-
-  .lg\:scrollbar-thin {
-    scrollbar-width: thin;
-  }
-
-  .lg\:scrollbar-thin::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-
-  .lg\:scrollbar-track-black-900 {
-    --scrollbar-track: #1C1C1C !important;
   }
 
   .group:hover .lg\:group-hover\:visible {
