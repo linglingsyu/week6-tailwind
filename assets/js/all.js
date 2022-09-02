@@ -4,6 +4,7 @@ $(document).ready(function () {
   $("#menu-toggle").on("click", function () {
     $("#mobile-menu").slideToggle();
   });
+  AOS.init();
 }); // // import Swiper bundle with all modules installed
 //  import Swiper from 'swiper/bundle';
 //  // import styles bundle
