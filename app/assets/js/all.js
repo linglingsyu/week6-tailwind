@@ -32,11 +32,9 @@ const swiper = new Swiper(".mySwiper2", {
 });
 
 const Myswiper = new Swiper(".mySwiper", {
-  // Optional parameters
-  // direction: "vertical",
-  // loop: true,
-  // freeMode: true,
+  loop: true,
+  slidesPerView: "auto",
   autoplay: {
-    delay: 3000,
+    delay: 1500,
   },
 });

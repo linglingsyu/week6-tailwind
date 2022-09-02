@@ -25,6 +25,10 @@ module.exports = {
         '5xl':'3rem',
         
       },
+      listStyleType: {
+        square: 'square',
+        roman: 'upper-roman',
+      }
       // fontFamily: {
       //   'display': ['Azeret Mono','Noto Sans TC', ...defaultTheme.fontFamily.mono],
       // },
